@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/10/57/fa/1057fa80b5545b9bba416c4d771d457a.jpg">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Form -->
+        <div id="login">
+            <img src="https://i.pinimg.com/564x/10/57/fa/1057fa80b5545b9bba416c4d771d457a.jpg" alt="TechCorp Logo" />
+            <h1 style="color:yellow;">NAZI TECH</h1>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div id="adminDashboard" class="dashboard">
+            <h1>Admin Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Recruit</a></li>
+                    <li><a href="#">Expense</a></li>
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Sign</a></li>
+                    <li><a href="#">All products</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section>
+                    <h2>Company Overview</h2>
+                    <p>Welcome, Admin! Here you can manage all the company tasks and view reports.</p>
+                    <p>Current Projects: 5</p>
+                    <p>Employees: 50</p>
+                </section>
+                <section>
+                    <h2>Recent Activities</h2>
+                    <ul>
+                        <li>Project Alpha completed</li>
+                        <li>New employee onboarding</li>
+                        <li>Quarterly financial report published</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Pending Approvals</h2>
+                    <ul>
+                        <li>Expense report for Q3</li>
+                        <li>New project proposal</li>
+                        <li>Employee leave requests</li>
+                    </ul>
+                </section>
+            </div>
+            <button id="logoutAdmin">Logout</button>
+        </div>
+
+        <!-- Employee Dashboard -->
+        <div id="employeeDashboard" class="dashboard">
+            <h1>Employee Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Recruit</a></li>
+                    <li><a href="#">Expense</a></li>
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Sign</a></li>
+                    <li><a href="#">All products</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section>
+                    <h2>My Tasks</h2>
+                    <ul>
+                        <li>Complete project report</li>
+                        <li>Attend team meeting</li>
+                        <li>Submit timesheet</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Announcements</h2>
+                    <ul>
+                        <li>Company picnic on Friday</li>
+                        <li>New health insurance plans available</li>
+                        <li>Office renovation next month</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Profile</h2>
+                    <p>Name: John Doe</p>
+                    <p>Position: Software Engineer</p>
+                    <p>Email: john.doe@techcorp.com</p>
+                </section>
+            </div>
+            <button id="logoutEmployee">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
